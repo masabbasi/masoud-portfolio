@@ -3,6 +3,7 @@
   margin: 0px;
   box-sizing: border-box;
   font-family: sans-serif;
+  background-color: rgb(240, 228, 213);
 }
 
 .header {
@@ -45,13 +46,14 @@
     "two-2 two-2 two-1 two-1"
     "three-1 three-1 three-2 three-2"
     "footer footer footer footer";
-  /* grid-gap: 1px; */
-  /* background-color: gray; */
-  padding: 20px;
+  margin: 20px;
+  grid-gap:100px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .grid-container div {
-  background-color: #5f2424;
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
