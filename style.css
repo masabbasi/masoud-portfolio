@@ -1,74 +1,74 @@
 * {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    font-family: sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 .header {
-    grid-area: header;
+  grid-area: header;
 }
 
 .section-one-image {
-    grid-area: one-1;
+  grid-area: one-1;
 }
 
 .section-one-text {
-    grid-area: one-2;
+  grid-area: one-2;
 }
 
 .section-two-image {
-    grid-area: two-1;
+  grid-area: two-1;
 }
 
 .section-two-text {
-    grid-area: two-2;
+  grid-area: two-2;
 }
 
 .section-three-image {
-    grid-area: three-1;
+  grid-area: three-1;
 }
 
 .section-three-text {
-    grid-area: three-2;
+  grid-area: three-2;
 }
 
 .footer {
-    grid-area: footer;
+  grid-area: footer;
 }
 
 .grid-container {
-    display: grid;
-    grid-template-areas:
-        'header header header header'
-        'one-1 one-1 one-2 one-2'
-        'two-2 two-2 two-1 two-1'
-        'three-1 three-1 three-2 three-2'
-        'footer footer footer footer';
-    /* grid-gap: 1px; */
-    /* background-color: gray; */
-    padding: 20px;
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "one-1 one-1 one-2 one-2"
+    "two-2 two-2 two-1 two-1"
+    "three-1 three-1 three-2 three-2"
+    "footer footer footer footer";
+  /* grid-gap: 1px; */
+  /* background-color: gray; */
+  padding: 20px;
 }
 
 .grid-container div {
-    background-color: #5f2424;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
+  background-color: #5f2424;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
 }
 
 .header {
-    display: flex;
+  display: flex;
 }
 
 .header .menu a {
-    padding: 0 20px;
-    color: black;
-    font-size: 18px;
-    text-decoration: none;
+  padding: 0 20px;
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
 }
 
 .header .menu a:hover {
-    background-color: greenyellow;
-    border-radius: 5px;
+  background-color: greenyellow;
+  border-radius: 5px;
 }
