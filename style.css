@@ -3,7 +3,12 @@
   margin: 0px;
   box-sizing: border-box;
   font-family: sans-serif;
-  background-color: rgb(240, 228, 213);
+  background-color: var(--bg-clr);
+}
+:root {
+  --bg-clr: rgb(213, 229, 240);
+  --fc: black;
+  --hvr-clr: rgba(15, 15, 15, 0.1);
 }
 
 .header {
@@ -47,10 +52,11 @@
     "three-1 three-1 three-2 three-2"
     "footer footer footer footer";
   margin: 20px;
-  grid-gap:100px;
+  grid-gap: 100px;
   justify-content: center;
   align-items: center;
   text-align: center;
+  overflow: hidden;
 }
 
 .grid-container div {
@@ -64,13 +70,14 @@
 }
 
 .header .menu a {
-  padding: 0 20px;
-  color: black;
+  padding: 10px;
+  margin-left: 20px;
+  color: var(--fc);
   font-size: 18px;
   text-decoration: none;
 }
 
 .header .menu a:hover {
-  background-color: greenyellow;
+  background-color: var(--hvr-clr);
   border-radius: 5px;
 }
