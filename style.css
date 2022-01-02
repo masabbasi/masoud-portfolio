@@ -6,7 +6,7 @@
   background-color: var(--bg-clr);
 }
 :root {
-  --bg-clr: rgb(213, 229, 240);
+  --bg-clr: rgb(209, 209, 207);
   --fc: black;
   --hvr-clr: rgba(15, 15, 15, 0.1);
 }
@@ -74,10 +74,16 @@
   margin-left: 20px;
   color: var(--fc);
   font-size: 18px;
+  font-weight: bolder;
   text-decoration: none;
 }
 
 .header .menu a:hover {
   background-color: var(--hvr-clr);
   border-radius: 5px;
+}
+.header .menu .logo {
+  border: 2px solid rgb(71, 6, 6);
+  border-radius: 5px;
+
 }
