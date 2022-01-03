@@ -5,6 +5,7 @@
   font-family: sans-serif;
   background-color: var(--bg-clr);
 }
+
 :root {
   --bg-clr: rgb(209, 209, 207);
   --fc: black;
@@ -82,8 +83,8 @@
   background-color: var(--hvr-clr);
   border-radius: 5px;
 }
+
 .header .menu .logo {
   border: 2px solid rgb(71, 6, 6);
   border-radius: 5px;
-
 }
