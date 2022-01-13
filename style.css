@@ -6,6 +6,7 @@ body {
   color: var(--bg-ft-clr);
   background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
 }
+
 :root {
   --ft-clr: black;
   --bg-ft-clr: #fefefe;
