@@ -13,15 +13,10 @@ body {
 :root {
   --ft-clr: black;
   --bg-ft-clr: #fefefe;
-  --bg-gr-1: #243949;
-  --bg-gr-2: #517fa4;
+  --bg-gr-1: #06101a;
+  --bg-gr-2: #213442;
   --hvr-clr: rgba(15, 15, 15, 0.1);
   --hdr-ft-clr: #e0fbfc;
-}
-.container div {
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
 }
 .header {
   display: grid;
@@ -54,4 +49,20 @@ body {
   transform: scale(1.1);
   transition: 0.2s ease-in-out;
   color: var(--bg-ft-clr);
+}
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 600px);
+  grid-template-rows: repeat(3, 500px);
+  grid-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.main div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+
 }
