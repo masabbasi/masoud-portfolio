@@ -4,12 +4,17 @@ body {
   box-sizing: border-box;
   font-family: sans-serif;
   color: var(--bg-ft-clr);
-  background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+  background-image: linear-gradient(
+    to right,
+    var(--bg-gr-1) 0%,
+    var(--bg-gr-2) 100%
+  );
 }
-
 :root {
   --ft-clr: black;
   --bg-ft-clr: #fefefe;
+  --bg-gr-1: #243949;
+  --bg-gr-2: #517fa4;
   --hvr-clr: rgba(15, 15, 15, 0.1);
   --hdr-ft-clr: #e0fbfc;
 }
@@ -37,7 +42,6 @@ body {
   margin: 0 auto;
   padding: 10px;
 }
-
 .header .menu a {
   padding: 10px 30px;
   font-size: 18px;
@@ -47,7 +51,6 @@ body {
   transition: 0.2s ease-in-out;
   color: var(--hdr-ft-clr);
 }
-
 .header .menu a:hover {
   transform: scale(1.1);
   transition: 0.2s ease-in-out;
