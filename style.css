@@ -18,7 +18,7 @@ body {
   --hvr-clr: rgba(15, 15, 15, 0.1);
   --hdr-ft-clr: #e0fbfc;
 }
-.grid-container div {
+.container div {
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
@@ -45,7 +45,6 @@ body {
 .header .menu a {
   padding: 10px 30px;
   font-size: 18px;
-  font-weight: bolder;
   text-decoration: none;
   width: auto;
   transition: 0.2s ease-in-out;
