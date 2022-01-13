@@ -66,3 +66,10 @@ body {
   text-align: justify;
   line-height: 1.6;
 }
+@media screen and (max-width: 1285px) {
+  .main{
+    grid-template-columns: repeat(1, 500px);
+
+  }
+
+}
