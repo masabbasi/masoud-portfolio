@@ -1,90 +1,80 @@
-* {
+body {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
   font-family: sans-serif;
-  background-color: var(--bg-clr);
+  color: var(--bg-ft-clr);
+  background-image: linear-gradient(
+    to right,
+    var(--bg-gr-1) 0%,
+    var(--bg-gr-2) 100%
+  );
 }
-
 :root {
-  --bg-clr: rgb(209, 209, 207);
-  --fc: black;
+  --ft-clr: black;
+  --bg-ft-clr: #fefefe;
+  --bg-gr-1: #06101a;
+  --bg-gr-2: #213442;
   --hvr-clr: rgba(15, 15, 15, 0.1);
+  --hdr-ft-clr: #e0fbfc;
 }
-
 .header {
-  grid-area: header;
-}
-
-.section-one-image {
-  grid-area: one-1;
-}
-
-.section-one-text {
-  grid-area: one-2;
-}
-
-.section-two-image {
-  grid-area: two-1;
-}
-
-.section-two-text {
-  grid-area: two-2;
-}
-
-.section-three-image {
-  grid-area: three-1;
-}
-
-.section-three-text {
-  grid-area: three-2;
-}
-
-.footer {
-  grid-area: footer;
-}
-
-.grid-container {
   display: grid;
-  grid-template-areas:
-    "header header header header"
-    "one-1 one-1 one-2 one-2"
-    "two-2 two-2 two-1 two-1"
-    "three-1 three-1 three-2 three-2"
-    "footer footer footer footer";
-  margin: 20px;
-  grid-gap: 100px;
+  grid-template-columns: repeat(1fr, auto);
+  grid-template-rows: repeat(1, 100px);
   justify-content: center;
   align-items: center;
   text-align: center;
-  overflow: hidden;
+  width: auto;
+  margin: 0 auto;
 }
-
-.grid-container div {
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
-}
-
-.header {
+.header .menu {
   display: flex;
-}
-
-.header .menu a {
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
   padding: 10px;
-  margin-left: 20px;
-  color: var(--fc);
+}
+.header .menu a {
+  padding: 10px 30px;
   font-size: 18px;
-  font-weight: bolder;
   text-decoration: none;
+  width: auto;
+  transition: 0.2s ease-in-out;
+  color: var(--hdr-ft-clr);
 }
-
 .header .menu a:hover {
-  background-color: var(--hvr-clr);
-  border-radius: 5px;
+  transform: scale(1.1);
+  transition: 0.2s ease-in-out;
+  color: var(--bg-ft-clr);
 }
-
-.header .menu .logo {
-  border: 2px solid rgb(71, 6, 6);
-  border-radius: 5px;
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 600px);
+  grid-template-rows: repeat(3, 500px);
+  grid-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.main div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  line-height: 1.6;
+  padding: 50px;
+}
+@media screen and (max-width: 1285px) {
+  .main {
+    grid-template-columns: repeat(1, 500px);
+    grid-gap: 10px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .header {
+    display: none;
+  }
 }
