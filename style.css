@@ -45,18 +45,6 @@
 }
 
 .grid-container {
-<<<<<<< HEAD
-    display: grid;
-    grid-template-areas:
-        'header header header header'
-        'one-1 one-1 one-2 one-2'
-        'two-2 two-2 two-1 two-1'
-        'three-1 three-1 three-2 three-2'
-        'footer footer footer footer';
-    /* grid-gap: 1px; */
-    background-color: gray;
-    padding: 10px;
-=======
   display: grid;
   grid-template-areas:
     "header header header header"
@@ -70,7 +58,6 @@
   align-items: center;
   text-align: center;
   overflow: hidden;
->>>>>>> fojan-v-1
 }
 
 .grid-container div {
