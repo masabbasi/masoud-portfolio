@@ -67,6 +67,26 @@ body {
   line-height: 1.6;
   padding: 50px;
 }
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+  grid-template-rows: repeat(1, 100px);
+  margin: 0 auto;
+  text-align: center;
+  background-color: var(--bg-gr-1);
+  justify-content: center;
+  align-items: center;
+}
+.footer a {
+  display: flex;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--hdr-ft-clr);
+}
+.footer a:hover{
+  color: var(--bg-ft-clr);
+}
+
 @media screen and (max-width: 1285px) {
   .main {
     grid-template-columns: repeat(1, 500px);
