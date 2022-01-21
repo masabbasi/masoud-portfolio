@@ -17,6 +17,7 @@ body {
   --bg-gr-2: #213442;
   --hvr-clr: rgba(15, 15, 15, 0.1);
   --hdr-ft-clr: #e0fbfc;
+  --hvr-footer :#3f5e75;
 }
 .header {
   display: grid;
@@ -79,12 +80,16 @@ body {
 }
 .footer a {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
   cursor: pointer;
   text-decoration: none;
-  color: var(--hdr-ft-clr);
+  color: var(--bg-gr-2);
 }
 .footer a:hover{
-  color: var(--bg-ft-clr);
+  color: var(--hvr-footer);
 }
 
 @media screen and (max-width: 1285px) {
@@ -97,4 +102,10 @@ body {
   .header {
     display: none;
   }
+}
+@media screen and (max-width: 500px) {
+  .footer{
+    overflow-x: hidden;
+  }
+
 }
