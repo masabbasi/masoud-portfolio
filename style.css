@@ -12,12 +12,12 @@ body {
 }
 :root {
   --ft-clr: black;
-  --bg-ft-clr: #fefefe;
+  --bg-ft-clr: #b6b6b6;
   --bg-gr-1: #06101a;
   --bg-gr-2: #213442;
   --hvr-clr: rgba(15, 15, 15, 0.1);
   --hdr-ft-clr: #e0fbfc;
-  --hvr-footer :#3f5e75;
+  --hvr-footer: #3f5e75;
 }
 .header {
   display: grid;
@@ -28,6 +28,7 @@ body {
   text-align: center;
   width: auto;
   margin: 0 auto;
+  background-color: var(--bg-gr-1);
 }
 .header .menu {
   display: flex;
@@ -44,7 +45,7 @@ body {
   text-decoration: none;
   width: auto;
   transition: 0.2s ease-in-out;
-  color: var(--hdr-ft-clr);
+  color: var(--hvr-footer);
 }
 .header .menu a:hover {
   transform: scale(1.1);
@@ -88,7 +89,7 @@ body {
   text-decoration: none;
   color: var(--bg-gr-2);
 }
-.footer a:hover{
+.footer a:hover {
   color: var(--hvr-footer);
 }
 
@@ -97,15 +98,12 @@ body {
     grid-template-columns: repeat(1, 500px);
     grid-gap: 10px;
   }
+  body {
+    overflow-x: hidden;
+  }
 }
 @media screen and (max-width: 700px) {
   .header {
     display: none;
   }
-}
-@media screen and (max-width: 500px) {
-  body{
-    overflow-x: hidden;
-  }
-
 }
