@@ -104,7 +104,7 @@ body {
   }
 }
 @media screen and (max-width: 500px) {
-  .footer{
+  body{
     overflow-x: hidden;
   }
 
