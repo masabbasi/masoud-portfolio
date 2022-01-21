@@ -16,7 +16,7 @@ body {
   --bg-gr-1: #06101a;
   --bg-gr-2: #213442;
   --hvr-clr: rgba(15, 15, 15, 0.1);
-  --hdr-ft-clr: #e0fbfc;
+  --hdr-ft-clr: #7a9bb4;
   --hvr-footer: #3f5e75;
 }
 .header {
@@ -50,7 +50,7 @@ body {
 .header .menu a:hover {
   transform: scale(1.1);
   transition: 0.2s ease-in-out;
-  color: var(--bg-ft-clr);
+  color: var(--hdr-ft-clr);
 }
 .main {
   display: grid;
