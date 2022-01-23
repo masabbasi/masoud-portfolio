@@ -1,80 +1,69 @@
-body {
+* {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%
+}
+
+body {
   font-family: sans-serif;
-  color: var(--bg-ft-clr);
-  background-image: linear-gradient(
-    to right,
-    var(--bg-gr-1) 0%,
-    var(--bg-gr-2) 100%
-  );
+  background-image: linear-gradient(#072227 0%, #35858B 100%);
+  color: #4FBDBA;
 }
-:root {
-  --ft-clr: black;
-  --bg-ft-clr: #fefefe;
-  --bg-gr-1: #06101a;
-  --bg-gr-2: #213442;
-  --hvr-clr: rgba(15, 15, 15, 0.1);
-  --hdr-ft-clr: #e0fbfc;
+
+.container {
+  width: 1320px;
+  margin: 0px auto;
 }
+
 .header {
-  display: grid;
-  grid-template-columns: repeat(1fr, auto);
-  grid-template-rows: repeat(1, 100px);
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: auto;
-  margin: 0 auto;
-}
-.header .menu {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  text-align: center;
-  margin: 0 auto;
-  padding: 10px;
 }
-.header .menu a {
-  padding: 10px 30px;
+
+.logo {}
+
+.menu {
+  margin: 20px;
+}
+
+.menu a {
+  padding: 0px 30px;
   font-size: 18px;
   text-decoration: none;
-  width: auto;
   transition: 0.2s ease-in-out;
-  color: var(--hdr-ft-clr);
+  color: #4FBDBA;
 }
+
 .header .menu a:hover {
+  background-color: #4FBDBA;
+  border-radius: 6px;
   transform: scale(1.1);
   transition: 0.2s ease-in-out;
-  color: var(--bg-ft-clr);
+  color: #AEFEFF;
 }
-.main {
-  display: grid;
-  grid-template-columns: repeat(2, 600px);
-  grid-template-rows: repeat(3, 500px);
-  grid-gap: 20px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.main div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: justify;
-  line-height: 1.6;
-  padding: 50px;
-}
-@media screen and (max-width: 1285px) {
-  .main {
-    grid-template-columns: repeat(1, 500px);
-    grid-gap: 10px;
-  }
-}
-@media screen and (max-width: 700px) {
-  .header {
-    display: none;
-  }
-}
+
+.main {}
+
+
+/*Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 576px) {}
+
+/*Small devices (landscape phones, 576px and up) */
+@media (min-width: 577px) and (max-width: 768px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 769px) and (max-width: 992px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 993px) and (max-width: 1200px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1201px) {}
