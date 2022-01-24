@@ -122,6 +122,119 @@ body {
 
 }
 
+.skills-bar {
+  padding: 20px 20px;
+}
+
+.skills-bar .bar {
+  margin: 10px 0;
+}
+
+.skills-bar .bar .info span {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.skills-bar .bar .info {
+  margin-bottom: 20px;
+  color: #D3DEDC;
+}
+
+.skills-bar .bar .progress-line {
+  position: relative;
+  height: 8px;
+  width: 400px;
+  background: #35858B;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar .progress-line span {
+  position: absolute;
+  background: #F9DF6A;
+  height: 100%;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.progress-line .html {
+  width: 90%;
+}
+
+.css {
+  width: 80%;
+}
+
+.js {
+  width: 10%;
+}
+
+.photoshop {
+  width: 70%;
+}
+
+.illustrator {
+  width: 60%;
+}
+
+
+.bar .progress-line span::before {
+  position: absolute;
+  content: "";
+  height: 0;
+  right: 0;
+  top: -14px;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-style: #f0f0f0;
+  border-top-color: #07374a;
+}
+
+.bar .progress-line span::after {
+  position: absolute;
+  right: 0;
+  top: -28px;
+  color: #f0f0f0;
+  font-size: 12px;
+  font-weight: 700;
+  background: #07374a;
+  padding: 1px 8px;
+  border-radius: 3px;
+}
+
+
+.progress-line .html::after {
+  content: "90%";
+}
+
+.progress-line .css::after {
+  content: "80%";
+}
+
+.progress-line .js::after {
+  content: "10%";
+}
+
+.progress-line .photoshop::after {
+  content: "70%";
+}
+
+.progress-line .illustrator::after {
+  content: "60%";
+}
+
 .certification {
   display: flex;
   flex-direction: column;
