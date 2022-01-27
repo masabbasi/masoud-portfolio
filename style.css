@@ -34,9 +34,9 @@ body {
 }
 
 .header {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  justify-items: center;
   align-items: center;
 }
 
@@ -65,14 +65,14 @@ body {
 
 .personal-image {
   background-color: #072227;
-  box-shadow: 0px -1px 5px #35858B;
-  width: 1400px;
-  height: 350px;
+  box-shadow: 0px 0px 20px 2px #35858B;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 30px 0px;
+  transform: scale(1.06);
 }
 
 .personal-image img {
@@ -96,6 +96,7 @@ body {
 }
 
 .hr {
+  margin: 20px 0px;
   text-align: center;
 }
 
@@ -103,10 +104,68 @@ body {
   max-width: 300px;
 }
 
-.profile {
-  margin: 30px 0px;
-  background-color: #072227;
-  padding: 25px;
+.section-one {
+  display: flex;
+  padding: 5px;
+  height: 300px;
+  color: white;
+  height: 600px;
+}
+
+.bio {
+  padding: 40px;
+  width: 50%;
+  height: 300px;
+  border-right: 1px solid #35858B;
+  height: 550px;
+  margin-top: 30px;
+}
+
+.bio p {
+  padding-left: 30px;
+  text-align: justify;
+  line-height: 30px;
+}
+
+.bio p strong {
+  font-size: 40px;
+}
+
+.education {
+  /* flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  padding: 40px;
+  width: 50%;
+  height: 300px;
+  border-left: 1px solid #35858B;
+  height: 550px;
+  margin-top: 30px;
+}
+
+.edu-list {
+  display: flex;
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+
+.edu-text p {
+  color: gray;
+  font-size: 15px;
+}
+
+.fa-solid {
+  color: #35858b;
+
+}
+
+.edu-icon {
+  padding-right: 10px;
+  font-size: 40px;
+}
+
+.section-one h2 {
+  margin-bottom: 30px;
 }
 
 .section-two {
@@ -114,28 +173,29 @@ body {
   justify-content: center;
   align-items: center;
   padding: 5px;
-  height: 400px;
 }
 
 .skills {
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
-  align-items: center;
-  padding: 20px;
+  /* align-items: center; */
+  padding: 40px;
   width: 50%;
-  height: 400px;
+  height: 700px;
   border-right: 1px solid #35858B;
-
 }
 
-.skills-bar {
-  padding: 20px 20px;
+.skills .bar {
+  padding-left: 30px;
 }
 
-.skills-bar .bar {
-  margin: 10px 0;
+.skills h2 {
+  align-self: flex-start;
+  color: white;
+  margin-bottom: 30px;
 }
+
 
 .skills-bar .bar .info span {
   font-size: 1rem;
@@ -143,8 +203,8 @@ body {
 }
 
 .skills-bar .bar .info {
-  margin-bottom: 20px;
   color: #D3DEDC;
+  margin: 24px 0px
 }
 
 .skills-bar .bar .progress-line {
@@ -243,42 +303,38 @@ body {
 }
 
 .certification {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  align-items: center;
-  padding: 20px;
+  padding: 40px;
   width: 50%;
-  height: 400px;
+  height: 300px;
   border-left: 1px solid #35858B;
+  height: 700px;
 }
 
-.certification strong,
-.skills strong {
-  font-size: 20px;
-  font-weight: 700;
-  color: #F9DF6A;
+.certification h2 {
+  align-self: flex-start;
+  color: white;
+  text-align: left;
+  margin-bottom: 30px;
 }
 
-.certification img {
-  max-width: 60px;
-}
-
-.certification-item {
+.certi-list {
   display: flex;
-  margin-top: 20px;
+  padding-left: 30px;
+  margin-bottom: 20px;
 }
 
-.certification-item-text h3 {
-  color: #F4F4FA;
-  margin-bottom: 10px;
+.certi-text p {
+  color: gray;
+  font-size: 15px;
 }
 
-.certification-item-text p {
-  color: #D3DEDC;
+.certi-icon {
+  padding-right: 10px;
+  font-size: 40px;
 }
 
-.contact {
+.contact,
+.contact a {
   width: 100%;
   height: 200px;
   box-shadow: inset 0px 0px 10px 0px #35858b;
@@ -387,11 +443,18 @@ body {
   color: #ffffff;
 }
 
+/* .contact .youtube a:hover, */
 .contact .youtube:hover,
 .contact .youtube:hover .tooltip,
 .contact .youtube:hover .tooltip::before {
   background-color: #ff0000;
   color: #ffffff;
+}
+
+.footer {
+  height: 50px;
+  text-align: center;
+  color: white;
 }
 
 /*Extra small devices (portrait phones, less than 576px) */
