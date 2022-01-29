@@ -40,10 +40,6 @@ body {
   align-items: center;
 }
 
-.logo {
-  /* Justify-self: flex-start; */
-}
-
 .menu {
   margin: 20px;
 }
@@ -104,43 +100,36 @@ body {
   max-width: 300px;
 }
 
+.vert {
+  align-self: center;
+  border: 1px solid #35858B;
+  height: 300px;
+}
+
 .section-one {
   display: flex;
-  padding: 5px;
-  height: 300px;
   color: white;
-  height: 600px;
+  padding: 5px;
 }
 
-.bio {
+.about-me {
   padding: 40px;
   width: 50%;
-  height: 300px;
-  border-right: 1px solid #35858B;
-  height: 550px;
-  margin-top: 30px;
 }
 
-.bio p {
+.about-me p {
   padding-left: 30px;
   text-align: justify;
   line-height: 30px;
 }
 
-.bio p strong {
+.about-me p strong {
   font-size: 40px;
 }
 
 .education {
-  /* flex-direction: column;
-  justify-content: center;
-  align-items: center; */
   padding: 40px;
   width: 50%;
-  height: 300px;
-  border-left: 1px solid #35858B;
-  height: 550px;
-  margin-top: 30px;
 }
 
 .edu-list {
@@ -170,20 +159,14 @@ body {
 
 .section-two {
   display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 5px;
 }
 
 .skills {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: center; */
   padding: 40px;
   width: 50%;
-  height: 700px;
-  border-right: 1px solid #35858B;
 }
 
 .skills .bar {
@@ -305,9 +288,6 @@ body {
 .certification {
   padding: 40px;
   width: 50%;
-  height: 300px;
-  border-left: 1px solid #35858B;
-  height: 700px;
 }
 
 .certification h2 {
@@ -331,6 +311,57 @@ body {
 .certi-icon {
   padding-right: 10px;
   font-size: 40px;
+}
+
+.section-three {
+  display: flex;
+  padding: 5px;
+}
+
+.section-three h2 {
+  margin-bottom: 30px;
+}
+
+.work-experience {
+  padding: 40px;
+  width: 50%;
+}
+
+.work-experience-list {
+  display: flex;
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+
+.work-experience-icon {
+  padding-right: 10px;
+  font-size: 40px;
+}
+
+.work-experience-text p {
+  color: gray;
+  font-size: 15px
+}
+
+.targets {
+  padding: 40px;
+  width: 50%;
+}
+
+.targets-list {
+  display: flex;
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+
+.targets-icon {
+  padding-right: 10px;
+  font-size: 40px;
+}
+
+.targets-text p {
+  color: gray;
+  font-size: 15px;
 }
 
 .contact,
