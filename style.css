@@ -498,7 +498,6 @@ body {
 .edu-list {
   display: flex;
   padding-left: 30px;
-  margin-bottom: 20px;
 }
 
 .edu-text {
@@ -671,7 +670,6 @@ body {
 .certi-list {
   display: flex;
   padding-left: 30px;
-  margin-bottom: 20px;
 }
 
 .certi-text {
@@ -710,18 +708,40 @@ body {
 .work-experience-list {
   display: flex;
   padding-left: 30px;
-  margin-bottom: 20px;
 }
 
 .work-experience-icon {
   padding-right: 10px;
   font-size: 40px;
-  align-self: center;
 }
 
 .work-experience-text p {
   color: gray;
   font-size: 15px
+}
+
+.top {
+  display: flex;
+}
+
+.work-experience h3 {
+  margin-bottom: 8px
+}
+
+.work-experience-text .top .kind {
+  align-self: center;
+  padding-left: 10px;
+  font-size: 11px;
+  margin-top: 14px;
+}
+
+.time {
+  line-height: 0;
+  padding: 0px 8px;
+}
+
+.time h5 {
+  color: gray;
 }
 
 .targets {
@@ -736,7 +756,6 @@ body {
 .targets-list {
   display: flex;
   padding-left: 30px;
-  margin-bottom: 20px;
 }
 
 .targets-icon {
