@@ -564,7 +564,7 @@ body {
   position: relative;
   height: 8px;
   width: 400px;
-  background: #35858B;
+  border: 1px solid #35858B;
   border-radius: 10px;
   transform: scaleX(0);
   transform-origin: left;
@@ -573,7 +573,7 @@ body {
 
 .bar .progress-line span {
   position: absolute;
-  background: #F9DF6A;
+  background: #35858B;
   height: 100%;
   border-radius: 10px;
   transform: scaleX(0);
@@ -729,10 +729,17 @@ body {
 }
 
 .work-experience-text .top .kind {
-  align-self: center;
-  padding-left: 10px;
+  margin-left: 10px;
   font-size: 11px;
-  margin-top: 14px;
+  font-weight: 600;
+  margin-top: 5px;
+  padding: 9px;
+  background-color: rgb(225, 239, 255);
+  color: rgb(7, 34, 39);
+  display: grid;
+  place-content: center;
+  border-radius: 5px;
+  align-self: center;
 }
 
 .time {
@@ -783,7 +790,6 @@ body {
 
 .contact .icon {
   position: relative;
-  background-color: #F9DF6A;
   border-radius: 50%;
   padding: 10px;
   margin: 10px;
