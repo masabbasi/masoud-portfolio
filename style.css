@@ -474,7 +474,13 @@ body {
   color: #ffffff;
 }
 
-/* .contact .youtube a:hover, */
+.contact .codepen:hover,
+.contact .codepen:hover .tooltip,
+.contact .codepen:hover .tooltip::before {
+  background-color: #ae63e4;
+  color: #ffffff;
+}
+
 .contact .youtube:hover,
 .contact .youtube:hover .tooltip,
 .contact .youtube:hover .tooltip::before {
