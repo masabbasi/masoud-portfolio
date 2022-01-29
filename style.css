@@ -424,13 +424,14 @@ body {
 .personal-image {
   background-color: #072227;
   box-shadow: 0px 0px 20px 2px #35858B;
-  height: 500px;
+  height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 30px 0px;
   transform: scale(1.06);
+  padding: 10px;
 }
 
 .personal-image img {
@@ -693,6 +694,10 @@ body {
   padding: 5px;
 }
 
+.work-experience-text {
+  line-height: 0;
+}
+
 .section-three h2 {
   margin-bottom: 30px;
 }
@@ -711,6 +716,7 @@ body {
 .work-experience-icon {
   padding-right: 10px;
   font-size: 40px;
+  align-self: center;
 }
 
 .work-experience-text p {
