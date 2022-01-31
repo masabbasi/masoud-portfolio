@@ -396,8 +396,8 @@ body {
 }
 
 .header {
-  display: grid;
-  grid-template-columns: 20% 60% 20%;
+  display: flex;
+  justify-content: space-between;
   justify-items: center;
   align-items: center;
 }
@@ -909,7 +909,122 @@ body {
 @media (max-width: 576px) {}
 
 /*Small devices (landscape phones, 576px and up) */
-@media (min-width: 577px) and (max-width: 768px) {}
+@media (max-width: 577px) {
+  .container {
+    width: 100%;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header img {
+    max-width: 60%;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .personal-image {
+    margin: 0px;
+    transform: scale(1);
+    height: 120px;
+  }
+
+  .personal-image img {
+    max-width: 80px;
+  }
+
+  .personal-image img:hover {}
+
+  .personal-image h1 {
+    padding: 0px;
+    font-size: 13px;
+  }
+
+  .section-one,
+  .section-two,
+  .section-three {
+    flex-direction: column;
+  }
+
+  .about-me,
+  .education,
+  .skills,
+  .certification,
+  .work-experience,
+  .targets {
+    padding: 15px;
+    width: auto;
+    font-size: 12px;
+  }
+
+  .about-me p strong {
+    font-size: 22px;
+  }
+
+  .about-me p {
+    padding: 3px;
+    line-height: 1.4;
+  }
+
+  .section-one h2,
+  .skills h2,
+  .certification h2,
+  .section-one h2,
+  .section-three h2 {
+    margin-bottom: 20px;
+  }
+
+  .edu.list,
+  .certi-list,
+  .work-experience-list,
+  .targets-list {
+    padding: 0px 22px;
+  }
+
+  .edu-icon,
+  .certi-icon,
+  .work-experience-icon,
+  .targets-icon {
+    font-size: 30px;
+    align-self: flex-start;
+  }
+
+  .edu-text p,
+  .certi-text p,
+  .work-experience-icon p,
+  .targets-icon p {
+    font-size: 12px;
+    line-height: 1.2;
+    text-align: justify;
+  }
+
+  .contact {
+    height: 70px;
+  }
+
+  .contact .icon {
+    position: relative;
+    border-radius: 50%;
+    padding: 0px;
+    margin: 0px;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .footer {
+    height: 25px;
+    font-size: 10px;
+  }
+
+  .vert {
+    display: none;
+  }
+}
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 769px) and (max-width: 992px) {}
