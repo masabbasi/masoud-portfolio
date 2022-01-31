@@ -378,6 +378,10 @@ template {
   display: none;
 }
 
+* {
+  margin: 0px;
+}
+
 body {
   font-family: sans-serif;
   /* background-image: linear-gradient(#072227 0%, #35858B 100%); */
@@ -498,6 +502,7 @@ body {
 .edu-list {
   display: flex;
   padding-left: 30px;
+  margin-bottom: 12px;
 }
 
 .edu-text {
@@ -670,6 +675,7 @@ body {
 .certi-list {
   display: flex;
   padding-left: 30px;
+  margin-bottom: 12px;
 }
 
 .certi-text {
@@ -708,6 +714,7 @@ body {
 .work-experience-list {
   display: flex;
   padding-left: 30px;
+  margin-bottom: 12px;
 }
 
 .work-experience-icon {
@@ -731,16 +738,16 @@ body {
 }
 
 .work-experience-text .top .kind {
-  margin-left: 10px;
   font-size: 13px;
   font-weight: 700;
-  padding: 9px;
+  padding: 1px;
   background-color: rgb(225, 239, 255);
   color: rgb(7, 34, 39);
   display: grid;
   place-content: center;
   border-radius: 5px;
   align-self: center;
+  margin: 0px 6px 4px;
 }
 
 .time {
@@ -764,6 +771,7 @@ body {
 .targets-list {
   display: flex;
   padding-left: 30px;
+  margin-bottom: 12px;
 }
 
 .targets-icon {
@@ -775,6 +783,10 @@ body {
 .targets-text p {
   color: gray;
   font-size: 15px;
+}
+
+.targets-text h3 {
+  margin: 0px
 }
 
 .contact,
@@ -801,7 +813,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: none;
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
@@ -898,11 +910,12 @@ body {
     margin-bottom: 20px;
   }
 
-  .edu.list,
+  .edu-list,
   .certi-list,
   .work-experience-list,
   .targets-list {
     padding: 0px 22px;
+    margin-bottom: 12px;
   }
 
   .edu-icon,
