@@ -837,6 +837,10 @@ body {
     display: none;
   }
 
+  ..time {
+    width: 18%;
+  }
+
   .personal-image {
     margin: 0px;
     transform: scale(1);
