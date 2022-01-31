@@ -912,6 +912,7 @@ body {
 @media (max-width: 577px) {
   .container {
     width: 100%;
+    margin: 0 auto;
   }
 
   .header {
@@ -1003,6 +1004,10 @@ body {
     text-align: justify;
   }
 
+  .skills-bar .bar .progress-line {
+    width: 90%;
+  }
+
   .contact {
     height: 70px;
   }
@@ -1024,6 +1029,7 @@ body {
   .vert {
     display: none;
   }
+
 }
 
 /* Medium devices (tablets, 768px and up) */
