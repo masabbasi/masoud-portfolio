@@ -805,99 +805,7 @@ body {
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.contact .tooltip {
-  position: absolute;
-  top: 0;
-  font-size: 14px;
-  background-color: #ffffff;
-  color: #ffffff;
-  padding: 5px 8px;
-  border-radius: 5px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
 
-.contact .tooltip::before {
-  position: absolute;
-  content: "";
-  height: 8px;
-  width: 8px;
-  background-color: #ffffff;
-  bottom: -3px;
-  left: 50%;
-  transform: translate(-50%) rotate(45deg);
-  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.contact .icon:hover .tooltip {
-  top: -45px;
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-
-.contact .icon:hover span,
-.contact .icon:hover .tooltip {
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
-}
-
-.contact .telegram:hover,
-.contact .telegram:hover .tooltip,
-.contact .telegram:hover .tooltip::before {
-  background-color: #0088cc;
-  color: #ffffff;
-}
-
-.contact .linkedin:hover,
-.contact .linkedin:hover .tooltip,
-.contact .linkedin:hover .tooltip::before {
-  background-color: #0077b5;
-  color: #ffffff;
-}
-
-.contact .instagram:hover,
-.contact .instagram:hover .tooltip,
-.contact .instagram:hover .tooltip::before {
-  background-color: #e1306c;
-  color: #ffffff;
-}
-
-.contact .twitter:hover,
-.contact .twitter:hover .tooltip,
-.contact .twitter:hover .tooltip::before {
-  background-color: #1da1f2;
-  color: #ffffff;
-}
-
-.contact .facebook:hover,
-.contact .facebook:hover .tooltip,
-.contact .facebook:hover .tooltip::before {
-  background-color: #1877f2;
-  color: #ffffff;
-}
-
-.contact .github:hover,
-.contact .github:hover .tooltip,
-.contact .github:hover .tooltip::before {
-  background-color: #333;
-  color: #ffffff;
-}
-
-.contact .codepen:hover,
-.contact .codepen:hover .tooltip,
-.contact .codepen:hover .tooltip::before {
-  background-color: #ae63e4;
-  color: #ffffff;
-}
-
-.contact .youtube:hover,
-.contact .youtube:hover .tooltip,
-.contact .youtube:hover .tooltip::before {
-  background-color: #ff0000;
-  color: #ffffff;
-}
 
 .footer {
   height: 50px;
@@ -952,6 +860,10 @@ body {
     flex-direction: column;
   }
 
+  .tooltip {
+    display: none;
+  }
+
   .about-me,
   .education,
   .skills,
@@ -997,11 +909,15 @@ body {
 
   .edu-text p,
   .certi-text p,
-  .work-experience-icon p,
-  .targets-icon p {
+  .work-experience-text p,
+  .targets-text p {
     font-size: 12px;
     line-height: 1.2;
     text-align: justify;
+  }
+
+  .work-experience h3 {
+    margin: 0;
   }
 
   .skills-bar .bar .progress-line {
@@ -1033,7 +949,101 @@ body {
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 769px) and (max-width: 992px) {}
+@media (min-width: 578px) {
+  .contact .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .contact .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background-color: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .contact .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .contact .icon:hover span,
+  .contact .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  .contact .telegram:hover,
+  .contact .telegram:hover .tooltip,
+  .contact .telegram:hover .tooltip::before {
+    background-color: #0088cc;
+    color: #ffffff;
+  }
+
+  .contact .linkedin:hover,
+  .contact .linkedin:hover .tooltip,
+  .contact .linkedin:hover .tooltip::before {
+    background-color: #0077b5;
+    color: #ffffff;
+  }
+
+  .contact .instagram:hover,
+  .contact .instagram:hover .tooltip,
+  .contact .instagram:hover .tooltip::before {
+    background-color: #e1306c;
+    color: #ffffff;
+  }
+
+  .contact .twitter:hover,
+  .contact .twitter:hover .tooltip,
+  .contact .twitter:hover .tooltip::before {
+    background-color: #1da1f2;
+    color: #ffffff;
+  }
+
+  .contact .facebook:hover,
+  .contact .facebook:hover .tooltip,
+  .contact .facebook:hover .tooltip::before {
+    background-color: #1877f2;
+    color: #ffffff;
+  }
+
+  .contact .github:hover,
+  .contact .github:hover .tooltip,
+  .contact .github:hover .tooltip::before {
+    background-color: #333;
+    color: #ffffff;
+  }
+
+  .contact .codepen:hover,
+  .contact .codepen:hover .tooltip,
+  .contact .codepen:hover .tooltip::before {
+    background-color: #ae63e4;
+    color: #ffffff;
+  }
+
+  .contact .youtube:hover,
+  .contact .youtube:hover .tooltip,
+  .contact .youtube:hover .tooltip::before {
+    background-color: #ff0000;
+    color: #ffffff;
+  }
+}
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 993px) and (max-width: 1200px) {}
