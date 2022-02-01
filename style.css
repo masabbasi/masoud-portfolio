@@ -848,6 +848,10 @@ body {
     max-width: 60%;
   }
 
+  .personal-image {
+    transform: scale(1);
+  }
+
   .menu {
     display: none;
   }
@@ -1066,17 +1070,29 @@ body {
     display: none;
   }
 
+  .contact .icon {
+    font-size: 15px;
+    margin: 0;
+  }
+
+  .hr img {
+    max-width: 200px;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 576px) and (max-width: 992px) {
-  .contact {
+  .container {
     width: 100%;
     margin: 0 auto;
   }
 
   .hamburger-menu {
     display: none;
+  }
+
+  .personal-image {
+    transform: scale(1);
   }
 
   .about-me p {
@@ -1161,6 +1177,7 @@ body {
   .work-experience,
   .targets {
     width: 90%;
+    padding: 30px;
   }
 
   .vert {
